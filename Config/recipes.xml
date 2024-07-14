@@ -1,0 +1,8 @@
+<Rinsan>
+    <append xpath="/recipes">
+        <!-- 植物纤维到碎布 -->
+        <recipe name="resourceCloth" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="resourceYuccaFibers" count="4"/>
+        </recipe>
+    </append>
+</Rinsan>
