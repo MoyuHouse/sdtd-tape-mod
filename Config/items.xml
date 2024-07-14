@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/items">
+		<item name="resourceGum"> <!-- scrap material -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="resourceGumDesc"/>
+			<property name="Material" value="MresourceWood"/>
+		</item>
+	</append>
+</configs>
