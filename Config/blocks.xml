@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
+		<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="wildCropsHarvest"/>
+		<drop event="Harvest" name="resourceCropCottonPlant" prob="0.5" count="2" tag="bonusCropHarvest"/>
+		<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="farmerBonusHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<drop event="Harvest" name="resourceCropCottonPlant" count="4" tag="cropHarvest"/>
+		<drop event="Harvest" name="resourceCropCottonPlant" prob="0.5" count="2" tag="bonusCropHarvest"/>
+		<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="farmerBonusHarvest"/>
+		<drop event="Harvest" name="plantedCotton1" count="2" tag="farmerBonusSeed"/>
+		<drop event="Destroy" name="plantedCotton1" count="2" prob="0.5"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="allHarvest"/>
+	</append>
+</configs>
