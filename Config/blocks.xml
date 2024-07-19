@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+	<!-- 棉花产量增加 -->
 	<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
 		<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="wildCropsHarvest"/>
 		<drop event="Harvest" name="resourceCropCottonPlant" prob="0.5" count="2" tag="bonusCropHarvest"/>
@@ -14,8 +15,49 @@
 		<drop event="Destroy" name="plantedCotton1" count="2" prob="0.5"/>
 	</append>
 
-	<append xpath="/blocks/block[@name='terrForestGround']">
-		<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="allHarvest"/>
+	<!-- 植物纤维采集 +6 -->
+	<append xpath="/blocks/block[@name='treeSnowyGrassDiagonal']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeBrownGrassDiagonal']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeTallGrassDiagonal']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeDesertShrub']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeForestGrassDiagonal']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeGreenBrownGrassDiagonal']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='treeShortGrass']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='forestFlower']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
+	</append>
+
+
+	<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="8" tag="allHarvest"/>
 	</append>
 
 	<!-- 树高度 48: 16 树胶 -->
@@ -113,5 +155,32 @@
 		<drop event="Harvest" name="resourceGum" count="0" tag="allHarvest"/>
 	</append>
 
+	<!-- 野生橡树 -->
+	<append xpath="/blocks/block[@name='treeOakLrg01']">
+		<drop event="Harvest" name="resourceGum" count="16" tag="allHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='treeOakMed02']">
+		<drop event="Harvest" name="resourceGum" count="13" tag="allHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='treeOakMed01']">
+		<drop event="Harvest" name="resourceGum" count="10" tag="allHarvest"/>
+	</append>
+
+	<!-- 平原树 2 （11m） -->
+	<append xpath="/blocks/block[@name='treePlainsTree2']">
+		<drop event="Harvest" name="resourceGum" count="10" tag="allHarvest"/>
+	</append>
+
+	<!-- 冷杉 -->
+	<append xpath="/blocks/block[@name='treeFirLrg01']">
+		<drop event="Harvest" name="resourceGum" count="16" tag="allHarvest"/>
+	</append>
+
+	<!-- 常青树 -->
+	<append xpath="/blocks/block[@name='treeWinterEverGreen']">
+		<drop event="Harvest" name="resourceGum" count="8" tag="allHarvest"/>
+	</append>
 
 </configs>
