@@ -17,4 +17,101 @@
 	<append xpath="/blocks/block[@name='terrForestGround']">
 		<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="allHarvest"/>
 	</append>
+
+	<!-- 树高度 48: 16 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '48m')]">
+		<drop event="Harvest" name="resourceGum" count="16" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 41: 13 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '41m')]">
+		<drop event="Harvest" name="resourceGum" count="13" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 31: 10 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '31m')]">
+		<drop event="Harvest" name="resourceGum" count="10" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 28: 9 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '28m')]">
+		<drop event="Harvest" name="resourceGum" count="9" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 27: 9 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '27m')]">
+		<drop event="Harvest" name="resourceGum" count="9" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 19: 6 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '19m')]">
+		<drop event="Harvest" name="resourceGum" count="6" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 17: 6 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '17m')]">
+		<drop event="Harvest" name="resourceGum" count="6" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 16: 5 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '16m')]">
+		<drop event="Harvest" name="resourceGum" count="5" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 15: 5 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '15m')]">
+		<drop event="Harvest" name="resourceGum" count="5" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 13: 4 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '13m')]">
+		<drop event="Harvest" name="resourceGum" count="4" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 12: 4 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '12m')]">
+		<drop event="Harvest" name="resourceGum" count="4" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 10: 3 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '10m')]">
+		<drop event="Harvest" name="resourceGum" count="3" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 8: 3 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '8m')]">
+		<drop event="Harvest" name="resourceGum" count="3" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 6: 2 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '6m')]">
+		<drop event="Harvest" name="resourceGum" count="2" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 4: 1 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '4m')]">
+		<drop event="Harvest" name="resourceGum" count="1" tag="allHarvest"/>
+	</append>
+
+
+	<!-- 树高度 1: 0 树胶 -->
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, '1m')]">
+		<drop event="Harvest" name="resourceGum" count="0" tag="allHarvest"/>
+	</append>
+
+
 </configs>
