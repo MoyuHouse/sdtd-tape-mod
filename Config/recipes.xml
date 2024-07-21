@@ -9,5 +9,40 @@
             <ingredient name="resourceCloth" count="4"/>
             <ingredient name="resourceGum" count="1"/>
         </recipe>
+
+        <!-- 近战零件配方 -->
+        <!-- 钢矛零件 -->
+        <recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnBatonT2StunBatonParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnClubT3SteelClubParts" count="1"/>
+        </recipe>
+
+        <!-- 砍刀零件 -->
+        <recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnBatonT2StunBatonParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="1"/>
+        </recipe>
+
+        <recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
+            <ingredient name="meleeWpnClubT3SteelClubParts" count="1"/>
+        </recipe>
     </append>
 </Rinsan>
