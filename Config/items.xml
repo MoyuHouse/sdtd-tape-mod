@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 	<append xpath="/items">
-		<item name="resourceGum"> <!-- scrap material -->
+		<item name="resourceGum">			<!-- scrap material -->
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Weight" value="5"/>
-			<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+			<property name="Stacknumber" value="6000"/>
+			<!-- STK resource -->
 			<property name="EconomicValue" value="25"/>
 			<property name="EconomicBundleSize" value="50"/>
 			<property name="Group" value="Resources"/>
 			<property name="DescriptionKey" value="resourceGumDesc"/>
 			<property name="Material" value="MresourceWood"/>
+		</item>
+
+		<item name="pansLuckyBox">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CustomIcon" value="pansLuckyBox"/>
+			<property name="CustomIconTint" value="B3B3B3"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Stacknumber" value="6000"/>
+			<property class="Action0">
+				<conditional>
+					<!-- 启用了现代武器模组，添加现代武器箱 -->
+					<if cond="mod_loaded('WeaponMaster_ModernWarfare')">
+						<property name="Random_item" value="现代武器箱,弹药补给箱,thrownGrenade,thrownAmmoMolotovCocktail,thrownDynamite"/>
+						<property name="Random_item_count" value="1-5,1-5,1-5,1-5,1-5"/>
+						<property name="Random_count" value="5"/>
+						<property name="Unique_random_only" value="true"/>
+					</if>
+					<else>
+						<!-- 常规：燃烧瓶、柱状炸药、手雷 -->
+						<property name="Random_item" value="thrownGrenade,thrownAmmoMolotovCocktail,thrownDynamite"/>
+						<property name="Random_item_count" value="1-5,1-5,1-5"/>
+						<property name="Random_count" value="3"/>
+						<property name="Unique_random_only" value="true"/>
+					</else>
+				</conditional>
+			</property>
 		</item>
 	</append>
 </configs>
