@@ -23,6 +23,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="Stacknumber" value="6000"/>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
 			<property class="Action0">
 				<conditional>
 					<!-- 启用了现代武器模组，添加现代武器箱 -->
