@@ -1,0 +1,8 @@
+<configs>
+    <append xpath="/progression/perks/perk[@name='skillCooking']">
+        <!-- 菠萝啤配方解锁 -->
+        <level_requirements level="30">
+            <recipe name="drinkPineappleBeer"/>
+        </level_requirements>
+    </append>
+</configs>
