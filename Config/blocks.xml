@@ -184,8 +184,8 @@
 	</append>
 
 	<!-- 菠萝掉落 - 所有树木都有概率掉落3-5个菠萝 -->
-	<append xpath="/blocks/block[contains(@name, 'tree')]">
-		<drop event="Harvest" name="foodPineapple" count="3-5" prob="0.3" tag="allHarvest"/>
+	<append xpath="/blocks/block[contains(@name, 'tree') and contains(@name, 'm')]">
+		<drop event="Harvest" name="foodPineapple" count="3,5" prob="0.3" tag="allHarvest"/>
 	</append>
 
 </configs>
