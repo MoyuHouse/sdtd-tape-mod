@@ -7,3 +7,6 @@ foodPineapple,菠萝
 foodPineappleDesc,新鲜的菠萝果实，甜美多汁但食用时会略微刺激口腔。砍伐树木时偶尔会掉落。
 drinkPineappleBeer,糖氏菠萝啤
 drinkPineappleBeerDesc,糖老板家传秘方酿制的菠萝啤，选用最新鲜的菠萝搭配优质蜂蜜，经过精心调制而成。传说糖老板年轻时游历南洋，学会了这道独特的酿酒工艺，回到家乡后不断改良，最终创造出这款口感甘甜、清香怡人且不会引起头晕的特色饮品。每一口都仿佛能品尝到热带阳光的味道。
+buffPineappleBeerName,菠萝清香
+buffPineappleBeerDesc,享受着糖氏菠萝啤带来的舒缓感受。
+buffPineappleBeerTooltip,来自热带水果的天然活力。提升耐力恢复和健康再生，无副作用。
