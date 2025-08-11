@@ -15,6 +15,46 @@
 			<property name="Material" value="MresourceWood"/>
 		</item>
 
+		<item name="foodPineapple">
+			<property name="HoldType" value="31"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganics"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="125"/>
+			<property name="EconomicValue" value="4"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="foodPineappleDesc"/>
+			<property name="UseAction" value="Eat"/>
+			<property name="Delay" value="1.5"/>
+			<property name="UseSound" value="player_eating"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.5"/>
+				<property name="Use_time" value="1.5"/>
+				<!-- Blueberry stats *2 but -1 health -->
+				<property name="Gain_food" value="8"/>
+				<property name="Gain_water" value="6"/>
+				<property name="Gain_health" value="-1"/>
+			</property>
+		</item>
+
+		<item name="drinkPineappleBeer">
+			<property name="Extends" value="drinkJarBeer"/>
+			<property name="CustomIcon" value="drinkPineappleBeer"/>
+			<property name="DescriptionKey" value="drinkPineappleBeerDesc"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.5"/>
+				<property name="Use_time" value="1.5"/>
+				<!-- Beer stats but without dizziness effect -->
+				<property name="Gain_food" value="1"/>
+				<property name="Gain_water" value="15"/>
+				<property name="Gain_health" value="2"/>
+				<property name="Gain_stamina" value="20"/>
+			</property>
+		</item>
+
 		<item name="pansLuckyBox">
 			<property name="Extends" value="questRewardBundleMaster"/>
 			<property name="CustomIcon" value="pansLuckyBox"/>
