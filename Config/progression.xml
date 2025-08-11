@@ -1,8 +1,11 @@
 <configs>
-    <append xpath="/progression/perks/perk[@name='skillCooking']">
-        <!-- 菠萝啤配方解锁 -->
-        <level_requirements level="30">
-            <recipe name="drinkPineappleBeer"/>
-        </level_requirements>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']">
+        <effect_group>
+            <passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="30,100" tags="drinkPineappleBeer"/>
+        </effect_group>
+    </append>
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[contains(@name_key,'foodT2-1')]">
+        <unlock_entry item="drinkPineappleBeer" unlock_tier="30" />
     </append>
 </configs>
