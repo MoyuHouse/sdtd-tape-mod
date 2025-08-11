@@ -46,8 +46,8 @@
         </recipe>
 
         <!-- 菠萝啤配方 -->
-        <recipe name="drinkPineappleBeer" count="1" craft_area="campfire" craft_time="5" perk_required="skillCooking" perk_level="30" tags="campfireCrafting">
-            <ingredient name="resourceHoney" count="2"/>
+        <recipe name="drinkPineappleBeer" count="1" craft_area="campfire" craft_time="5" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="foodHoney" count="2"/>
             <ingredient name="drinkJarBoiledWater" count="1"/>
             <ingredient name="foodPineapple" count="1"/>
         </recipe>

@@ -10,3 +10,4 @@ drinkPineappleBeerDesc,糖老板家传秘方酿制的菠萝啤，选用最新鲜
 buffPineappleBeerName,菠萝清香
 buffPineappleBeerDesc,享受着糖氏菠萝啤带来的舒缓感受。
 buffPineappleBeerTooltip,来自热带水果的天然活力。提升耐力恢复和健康再生，无副作用。
+foodT6-1,第3级：糖氏菠萝啤
