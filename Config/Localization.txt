@@ -3,3 +3,11 @@ resourceGum,树脂
 resourceGumDesc,树脂是一种黏性的液体，其主要组分为较容易挥发的萜烯类物质，使得树脂具有特殊的味道。还含有溶解在萜烯中的不挥发的黏性固体，所以当树脂暴露在空气中，萜烯类物质挥发掉，使得树脂黏度增大，形成固体
 pansLuckyBox,米奇♂喵喵盲盒
 pansLuckyBoxDesc,潘总的神必妙妙盲盒，随机开出1-5个现代武器箱、弹药补给箱、手雷、柱状炸药和燃烧瓶
+foodPineapple,菠萝
+foodPineappleDesc,新鲜的菠萝果实，甜美多汁但食用时会略微刺激口腔。砍伐树木时偶尔会掉落。
+drinkPineappleBeer,糖氏菠萝啤
+drinkPineappleBeerDesc,糖老板家传秘方酿制的菠萝啤，选用最新鲜的菠萝搭配优质蜂蜜，经过精心调制而成。传说糖老板年轻时游历南洋，学会了这道独特的酿酒工艺，回到家乡后不断改良，最终创造出这款口感甘甜、清香怡人且不会引起头晕的特色饮品。每一口都仿佛能品尝到热带阳光的味道。
+buffPineappleBeerName,菠萝清香
+buffPineappleBeerDesc,享受着糖氏菠萝啤带来的舒缓感受。
+buffPineappleBeerTooltip,来自热带水果的天然活力。提升耐力恢复和健康再生，无副作用。
+foodT6-1,第3级：糖氏菠萝啤

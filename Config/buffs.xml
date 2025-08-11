@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/buffs">
+		<!-- *** buffPineappleBeer -->
+		<!-- TRIGGERED_BY: Items = drinkPineappleBeer -->
+		<!-- Similar to beer but without drunk effects and with health regeneration -->
+		<buff name="buffPineappleBeer" name_key="buffPineappleBeerName" description_key="buffPineappleBeerDesc" tooltip_key="buffPineappleBeerTooltip" icon="ui_game_symbol_beer">
+			<damage_type value="disease"/>
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".buffPineappleBeerDisplay"/>
+			<display_value_format value="time"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="set" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffPineappleBeerDuration" operation="subtract" value="@.dummy"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffPineappleBeerDisplay" operation="set" value="@$buffPineappleBeerDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffPineappleBeerDisplay" operation="divide" value="@.dummy"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPineappleBeer">
+					<requirement name="CVarCompare" cvar="$buffPineappleBeerDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$buffPineappleBeerDuration,.buffPineappleBeerDisplay,.dummy"/>
+			</effect_group>
+
+			<effect_group>
+				<!-- Stamina regeneration boost like beer -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.4">
+					<requirement name="!HasBuff" buff="buffHealWaterMax"/>
+				</passive_effect>
+
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
+					<requirement name="HasBuff" buff="buffHealWaterMax"/>
+				</passive_effect>
+
+				<!-- Health regeneration from pineapple properties -->
+				<passive_effect name="HealthChangeOT" operation="base_add" value="0.1"/>
+
+				<!-- No drunk effects - key difference from regular beer -->
+
+				<!-- Stun resistance like beer -->
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
+
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffPineappleBeerDisplay,$buffPineappleBeerDuration"/>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

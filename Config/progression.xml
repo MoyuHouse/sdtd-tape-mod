@@ -1,0 +1,11 @@
+<configs>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']">
+        <effect_group>
+            <passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="30,100" tags="drinkPineappleBeer"/>
+        </effect_group>
+
+        <display_entry icon="drinkPineappleBeer" name_key="foodT6-1" has_quality="false" unlock_level="30">
+            <unlock_entry item="drinkPineappleBeer" unlock_tier="1" />
+        </display_entry>
+    </append>
+</configs>

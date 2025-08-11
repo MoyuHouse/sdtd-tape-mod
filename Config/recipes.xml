@@ -44,5 +44,12 @@
         <recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" craft_time="15" always_unlocked="true" tags="workbenchCrafting">
             <ingredient name="meleeWpnClubT3SteelClubParts" count="1"/>
         </recipe>
+
+        <!-- 菠萝啤配方 -->
+        <recipe name="drinkPineappleBeer" count="1" craft_area="campfire" craft_time="5" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="foodHoney" count="2"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+            <ingredient name="foodPineapple" count="1"/>
+        </recipe>
     </append>
 </Rinsan>

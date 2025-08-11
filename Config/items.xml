@@ -15,6 +15,73 @@
 			<property name="Material" value="MresourceWood"/>
 		</item>
 
+		<item name="foodPineapple">
+			<property name="Tags" value="food,foodSkill,fitness"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="125"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="CraftingIngredientTime" value="8"/>
+			<property name="SoundPickup" value="blueberries_grab"/>
+			<property name="SoundPlace" value="blueberries_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="8"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="6"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-3"/>
+				<display_value name="foodHealthAmount" value="-3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<item name="drinkPineappleBeer">
+			<property name="Tags" value="drinks,foodSkill,fitness"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="@:Other/Items/Food/masonJarBeerPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="UnlockedBy" value="craftingFood"/>
+			<property name="DisplayType" value="waterGrandpasMoonshine"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+			<property name="CustomIcon" value="drinkPineappleBeer"/>
+			<property name="DescriptionKey" value="drinkPineappleBeerDesc"/>
+			<property name="SoundPickup" value="jars_grab"/>
+			<property name="SoundPlace" value="jars_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 3">
+				<requirement name="!HasBuff" buff="buffIsOnFire"/>
+				<display_value name="dStaminaRegen" value=".4"/>
+				<display_value name="dEntityDamageBrawling" value="1"/>
+				<display_value name="dStunResist" value="1"/>
+				<display_value name="dDuration" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffPineappleBeerDuration" operation="add" value="63"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffPineappleBeerDuration" operation="set" value="183">
+					<requirement name="CVarCompare" cvar="$buffPineappleBeerDuration" operation="GT" value="183"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPineappleBeer"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+
 		<item name="pansLuckyBox">
 			<property name="Extends" value="questRewardBundleMaster"/>
 			<property name="CustomIcon" value="pansLuckyBox"/>
